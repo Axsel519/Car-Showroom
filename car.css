@@ -1,0 +1,1034 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Start Global Rules */
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/* Start Variables */
+:root {
+  --main-color: #10cab7;
+  --secondary-color: #2c4755;
+  --section-padding: 3vw;
+  --section-background: #f6f6f6;
+  --main-duration: 0.5s;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  margin: 0px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/*HOME*/
+
+.home {
+  background-image: url("https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjxW1GXqfc0AY6_8W4GpDmU_Qn6DytU8YqRKY-yhy0inrW2f3Gus2nVYDf6WHje26qfgzBaJ3B0Mv89OoVskQyP8nsw3oZmjedHLJ43pxsveCcukvrqwGu8ORZfER-brg5YpqzCnN_v73MhQMlpZjik_tzuZ7u2PKwsdDPos09_0KARgSwz24ceLRLxG94/s2280/cars%207.jpg");
+  background-size: cover;
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-attachment: fixed;
+}
+
+h1 {
+  text-align: center;
+  margin: 8vw 0vw;
+  font-size: 5vw;
+  color: #b7b7b7;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+img.logo {
+  width: 15vw;
+  margin: 0vw 0vw;
+}
+
+
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+/*BMW*/
+
+ /* Start logo */
+ .logobmw .logo {
+  width: 5vw;
+  margin: -6vw 4vw;
+}
+
+.links {
+  position: relative;
+}
+
+.links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.links .icon {
+  margin: 1vw 94vw;
+  width: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  /* height: 59px; */
+}
+
+.links .icon span {
+  background-color: #333;
+  margin-bottom: 0.5vw;
+  height: 0.2vw;
+}
+
+.links .icon span:first-child,
+.links .icon span:last-child {
+  width: 100%;
+}
+
+.links .icon span:nth-child(2) {
+  width: 60%;
+  transition: var(--main-duration);
+}
+
+.links ul {
+  list-style: none;
+  margin: 0px 2vw;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 15vw;
+  top: calc(90% + 1.5vw);
+  display: none;
+  z-index: 1;
+} 
+
+.links ul::before {
+  content: "";
+  border-width: 1vw;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 0.5vw;
+  top: -2vw;
+}
+
+.links:hover ul {
+  display: block;
+}
+
+.links ul li a {
+  display: block;
+  padding: 1.5vw;
+  text-decoration: none;
+  color: #333;
+  transition: var(--main-duration);
+}
+
+.links ul li a:hover {
+  padding-left: 2.5vw;
+}
+
+.links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+
+/* End Header */
+
+/* Start Components */
+.special-heading {
+  color: #ebeced;
+  font-size: 7vw;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -0.3vw;
+  margin: 1.5vw;
+}
+
+.special-heading + p {
+  font-size: 2vw;
+  text-align: center;
+  color: #797979;
+  margin-top: -2vw;
+}
+
+/* End Components */
+
+.logobmw {
+  background-image: url(https://media.gemini.media/img/shift-eg/large/2022/5/18/2022_5_18_12_22_23_664.webp);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 62vw;
+}
+
+.logobmw .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 32vw;
+  max-width: 100%;
+}
+
+.logobmw .intro-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 5vw;
+  color: #ddd;
+}
+
+.logobmw .intro-text p {
+  font-size: 3vw;
+  line-height: 1.8;
+  background-color: #33333369;
+  color: #ddd;
+}
+
+/* End Logo Section */
+
+/* Start Services */
+.text {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -20vw 48vw;
+  width: 50vw;
+} 
+
+.text hr {
+  width: 50%;
+  display: inline-block;
+  border-color: var(--main-color);
+}
+
+.text p:first-of-type {
+  font-weight: bold;
+  line-height: 2;
+  margin-bottom: 1vw;
+}
+
+.text p:last-of-type {
+  line-height: 2;
+  color: #777;
+  margin-bottom: 26vw;
+}
+
+/* BMW Sections */
+.bmw1,
+.bmw2,
+.bmw3 {
+  background-size: cover;
+}
+
+.bmw1 {
+  animation-name:bmwcar1;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes bmwcar1 {
+
+  0%{   background-image: url("https://mystrongad.com/MWB_MotorwerksBMW/Digital/3%20Series/2024/2024-BMW-3-Series-Gray.webp");
+    width: 47.5vw;
+    height: 26.5vw;}
+  50%{  background-image: url("https://www.bmw-me.com/content/dam/bmw/common/all-models/3-series/sedan/2018/navigation/bmw-3-series-modellfinder.png");
+  }
+  100%{  background-image: url("https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/bmw-3-series-my20-index-1.png");
+  }
+  
+}
+
+.bmw1 {
+  background-image: url("https://mystrongad.com/MWB_MotorwerksBMW/Digital/3%20Series/2024/2024-BMW-3-Series-Gray.webp");
+  width: 47.5vw;
+  height: 26.5vw;
+}
+
+.bmw1:hover {
+  background-image: url("https://www.bmw-me.com/content/dam/bmw/common/all-models/3-series/sedan/2018/navigation/bmw-3-series-modellfinder.png");
+}
+
+.bmw1:active {
+  background-image: url("https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_default/v1/editorial/bmw-3-series-my20-index-1.png");
+}
+
+.bmw2 {
+
+  animation-name:bmwcar2;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes  bmwcar2{
+
+  0%{  background-image: url("https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb65a4656081e3d8e88cb10/stills_0640_png/MY2022/50773/50773_st0640_116.png");
+    width: 45vw;
+    height: 27vw; }
+  50%{  background-image: url("https://assets.autobuzz.my/wp-content/uploads/2024/02/19111117/2024-BMW-iX-updated-Malaysia-4.jpg");
+  }
+  100%{  background-image: url("https://www.industr.com/de/__image/a/2637566/alias/xl/ar/16-9/fn/bmw.jpg");
+  }
+  
+}
+
+.bmw2 {
+  background-image: url("https://d2ivfcfbdvj3sm.cloudfront.net/7fc965ab77efe6e0fa62e4ca1ea7673bb65a4656081e3d8e88cb10/stills_0640_png/MY2022/50773/50773_st0640_116.png");
+  width: 45vw;
+  height: 27vw;
+}
+
+.bmw2:hover {
+  background-image: url("https://assets.autobuzz.my/wp-content/uploads/2024/02/19111117/2024-BMW-iX-updated-Malaysia-4.jpg");
+}
+
+.bmw2:active {
+  background-image: url("https://www.industr.com/de/__image/a/2637566/alias/xl/ar/16-9/fn/bmw.jpg");
+}
+
+.bmw3{
+
+  animation-name:bmwcar3;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes bmwcar3 {
+
+  0%{  background-image: url("https://www.bmw-egypt.com/content/dam/bmw/common/all-models/4-series/gran-coupe/2019/navigation/bmw-4-series-gran-coupe-modelfinder.png");
+    width: 47.5vw;
+    height: 26.5vw; }
+  50%{  background-image: url("https://www.bmw.co.za/content/dam/bmw/common/all-models/4-series/gran-coupe/2017/navigation/BMW-4-Series-Gran-Coupe-ModelCard.png");
+  }
+  100%{  background-image: url("https://www.bmw-ghana.com/content/dam/bmw/common/all-models/4-series/coupe/2017/navigation/BMW-4-Series-Coupe-ModelCard.png");
+  }
+  
+}
+
+.bmw3 {
+  background-image: url("https://www.bmw-egypt.com/content/dam/bmw/common/all-models/4-series/gran-coupe/2019/navigation/bmw-4-series-gran-coupe-modelfinder.png");
+  width: 47.5vw;
+  height: 26.5vw;
+}
+
+.bmw3:hover {
+  background-image: url("https://www.bmw.co.za/content/dam/bmw/common/all-models/4-series/gran-coupe/2017/navigation/BMW-4-Series-Gran-Coupe-ModelCard.png");
+}
+
+.bmw3:active {
+  background-image: url("https://www.bmw-ghana.com/content/dam/bmw/common/all-models/4-series/coupe/2017/navigation/BMW-4-Series-Coupe-ModelCard.png");
+}
+
+/* End BMW Sections */
+
+/* Start Contact */
+.contact {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  background-color: var(--section-background);
+}
+
+.contact .info {
+  padding-top: var(--section-padding);
+  padding-bottom: var(--section-padding);
+  text-align: center;
+}
+
+.contact .info .label {
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: var(--secondary-color);
+  letter-spacing: -0.2vw;
+  margin-bottom: 1.5vw;
+}
+
+.contact .info .link {
+  display: block;
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: var(--main-color);
+  text-decoration: none;
+}
+
+.contact .info .social {
+  display: flex;
+  justify-content: center;
+  margin-top: 2vw;
+  font-size: 1.6vw;
+}
+
+.contact .info .social i {
+  margin-left: 1vw;
+  color: var(--secondary-color);
+}
+
+/* End Contact */
+
+/* Start Footer */
+.footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 3vw 1vw;
+  text-align: center;
+  font-size: 1.8vw;
+}
+
+.footer span {
+  font-weight: bold;
+  color: var(--main-color);
+}
+
+/* End Footer */
+
+/* Marcedes*/
+.logomar{
+  background-image: url("https://static.hiamag.com/styles/autox754/public/article/27/05/2020/9362166-1100306123.jpg");
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 62vw;
+}
+.logomar.logo{
+    width: 5vw;
+    margin: -6vw 4vw;
+}
+
+
+.logomar .logo {
+  width: 5vw;
+  margin: 30px 4vw;
+}
+
+.logomar .links .icon {
+  margin: -6vw 95vw;
+  width: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: -48px;
+}
+
+.mar-text {
+  position: absolute;
+  left: 50%;
+  top: 25%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+
+.mar-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 41px;
+  color: #ddd;
+  text-align: center;
+}
+
+.mar-text p {
+  font-size: 30px;
+  line-height: 1.8;
+  background-color: #33333369;
+  color: #ddd;
+}
+
+
+.logomar .intro-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  width: 32vw;
+  max-width: 100%;
+}
+
+.mar-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 41px;
+  color: #ddd;
+  text-align: center;
+}
+.mar-text p {
+  font-size: 30px;
+  line-height: 1.8;
+  background-color: #33333369;
+  color: #ddd;
+}
+
+/* Start Mercedes Sections */
+.mercedes1,
+.mercedes2,
+.mercedes3 {
+  background-size: cover;
+}
+
+
+
+.mercedes1 {
+  width: 31.5vw;
+  height: 22.5vw;
+  animation-name:merc1;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+@keyframes merc1 {
+
+  0%{  background-image: url(https://ymimg1.b8cdn.com/resized/car_model/9711/pictures/11052834/mobile_listing_main_Mercedes_Benz_E_Class_Coupe__5_.jpg);}
+  50%{   width: 35vw;
+     background-image: url(https://hapi.hessel.dk/assets/2641_d09a12cb-9282-466d-9eb0-6aa610c20c82/productdetails/e-sedan-polarhvid-2.webp);}
+  100%{  background-image: url("https://ymimg1.b8cdn.com/resized/car_version/24144/pictures/8549804/mobile_listing_main_14671_st1280_089.jpg");}
+  
+}
+
+.mercedes1{
+  background-image: url(https://ymimg1.b8cdn.com/resized/car_model/9711/pictures/11052834/mobile_listing_main_Mercedes_Benz_E_Class_Coupe__5_.jpg);
+}
+
+.mercedes1:hover{
+  width: 35vw;
+  background-image: url(https://hapi.hessel.dk/assets/2641_d09a12cb-9282-466d-9eb0-6aa610c20c82/productdetails/e-sedan-polarhvid-2.webp);
+}
+
+.mercedes1:active{
+  background-image: url("https://ymimg1.b8cdn.com/resized/car_version/24144/pictures/8549804/mobile_listing_main_14671_st1280_089.jpg");
+}
+
+
+.mercedes2 {
+  width: 31.5vw;
+  height: 22.5vw;
+  animation-name:merc2;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+@keyframes merc2 {
+
+  0%{    background-image: url(https://image.made-in-china.com/2f0j00lfYbAvmBrRrF/Mercedez-Benz-Eqa-260-Chinese-EV-Cars-with-Long-Range-Electric-SUV-Small-New-Second-Hand-Vehicle-2023-619km-in-Stock-New-Collection.webp);
+    width: 35vw;
+    height: 35vw;
+  }
+  50%{  background-image: url(https://www.mercedes-benz.com.eg/content/dam/hq/passengercars/cars/eqa/eqa-saloon-h243-pi/modeloverview/09-2022/images/mercedes-eq-eqa-suv-h243-modeloverview-696x392-09-2022.png);
+    width: 50vw;
+    height: 25vw;
+    margin: 5vw 0vw;
+  }
+  100%{   background-image: url("https://rk.mb-qr.com/media/thumbnails/cards/Front_sgHtdaX.png.860x860_q95.png");
+    width: 50vw;
+  height: 25vw;
+  margin: 5vw 0vw;
+  }
+  
+}
+
+.mercedes2 {
+  background-image: url(https://image.made-in-china.com/2f0j00lfYbAvmBrRrF/Mercedez-Benz-Eqa-260-Chinese-EV-Cars-with-Long-Range-Electric-SUV-Small-New-Second-Hand-Vehicle-2023-619km-in-Stock-New-Collection.webp);
+  width: 35vw;
+  height: 35vw;
+
+}
+
+.mercedes2:hover {
+  background-image: url(https://www.mercedes-benz.com.eg/content/dam/hq/passengercars/cars/eqa/eqa-saloon-h243-pi/modeloverview/09-2022/images/mercedes-eq-eqa-suv-h243-modeloverview-696x392-09-2022.png);
+  width: 50vw;
+  height: 25vw;
+  margin: 5vw 0vw;
+}
+
+.mercedes2:active {
+  background-image: url("https://rk.mb-qr.com/media/thumbnails/cards/Front_sgHtdaX.png.860x860_q95.png");
+}
+
+.mercedes3 {
+  width: 31.5vw;
+  height: 22.5vw;
+  animation-name:merc3;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+@keyframes merc3 {
+
+  0%{      background-image: url("https://ymimg1.b8cdn.com/uploads/car_version/26662/pictures/8556301/50631_st1280_118.jpg");
+    width: 47.5vw;
+    height: 34.5vw;
+    }
+  50%{  background-image: url("https://www.mbusa.com/content/dam/mb-nafta/us/myco/my24/gt/gt-63-se/media/images/2023-Model-2024-Mercedes-AMG-GT-63-4MATIC-S-4-Door-Coupe-MP-01-Desktop.webp");
+
+  }
+  100%{   background-image: url("https://cdn.motor1.com/images/mgl/JNpBP/s1/2024-mercedes-amg-gt-4-door-coupe.webp");
+
+  }
+  
+}
+
+.mercedes3 {
+      background-image: url("https://ymimg1.b8cdn.com/uploads/car_version/26662/pictures/8556301/50631_st1280_118.jpg");
+  width: 47.5vw;
+  height: 34.5vw;
+}
+
+.mercedes3:hover {
+  background-image: url("https://www.mbusa.com/content/dam/mb-nafta/us/myco/my24/gt/gt-63-se/media/images/2023-Model-2024-Mercedes-AMG-GT-63-4MATIC-S-4-Door-Coupe-MP-01-Desktop.webp");
+}
+
+.mercedes3:active {
+  background-image: url("https://cdn.motor1.com/images/mgl/JNpBP/s1/2024-mercedes-amg-gt-4-door-coupe.webp");
+}
+
+/*End Mercedes Sections*/
+ 
+/*Ferrari*/
+.logofer {
+  background-image: url(https://cdn.motor1.com/images/mgl/XBGJbe/s1/ferrari-sp-8.jpg);
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 62vw;
+}
+
+.logofer .logo {
+  width: 8vw;
+  margin: 2vw 4vw;
+}
+
+.logofer .links {
+  position: relative;
+}
+
+.logofer .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.fer-text {
+  position: absolute;
+  left: 55%;
+  top: 25%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  max-width: 100%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.fer-text h1 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 41px;
+  color: #ddd;
+  text-align: center;
+}
+.fer-text p {
+  font-size: 30px;
+  line-height: 1.8;
+  background-color: #33333369;
+  color: #ddd;
+}
+
+.logofer .links {
+  position: relative;
+}
+.logofer .links:hover .icon span:nth-child(2) {
+  width: 100%;
+}
+
+.logofer .links .icon {
+  margin: -6vw 95vw;
+  width: 3%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.logofer .links .icon span {
+  background-color: #333;
+  margin-bottom: 0.5vw;
+  height: 0.2vw;
+}
+.logofer .links .icon span:first-child,
+.logofer .links .icon span:last-child {
+  width: 100%;
+}
+.logofer .links .icon span:nth-child(2) {
+  width: 60%;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+.logofer .links ul {
+  list-style: none;
+  margin: 0px 25px  ;
+  padding: 0;
+  background-color: #f6f6f6;
+  position: absolute;
+  right: 0;
+  min-width: 200px;
+  top: calc(100% + 15px);
+  display: none;
+  z-index: 1;
+}
+.logofer .links ul::before {
+  content: "";
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent #f6f6f6 transparent;
+  position: absolute;
+  right: 5px;
+  top: -20px;
+}
+.logofer .links:hover ul {
+  display: block;
+}
+.logofer .links ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  transition: var(--main-duration);
+  -webkit-transition: var(--main-duration);
+  -moz-transition: var(--main-duration);
+  -ms-transition: var(--main-duration);
+  -o-transition: var(--main-duration);
+}
+.logofer .links ul li a:hover {
+  padding-left: 25px;
+}
+.logofer .links ul li:not(:last-child) a {
+  border-bottom: 1px solid #ddd;
+}
+/* End Header */
+
+
+
+/* Start Ferrari Sections */
+
+.Fer1 {
+
+  animation-name:Ferrari1;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes Ferrari1  {
+
+  0%{   background-image:url("https://ymimg1.b8cdn.com/resized/car_model/10242/pictures/11059885/listing_main_01.png");
+    width: 475px;
+    height: 265px; 
+    background-size: cover;}
+  50%{    background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10250/pictures/11059974/01.png");
+  }
+  100%{    background-image: url("https://www.edelstark.com/fileadmin/_processed_/b/2/csm_Ferrari-F8-Tributo-mieten_0e57471ae8.png");
+  }
+  
+}
+
+.Fer1{
+  background-image:url("https://ymimg1.b8cdn.com/resized/car_model/10242/pictures/11059885/listing_main_01.png");
+  width: 475px;
+  height: 265px; 
+  background-size: cover;
+  }
+  .Fer1:hover{
+    background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10250/pictures/11059974/01.png");
+  }
+  .Fer1:active{
+    background-image: url("https://www.edelstark.com/fileadmin/_processed_/b/2/csm_Ferrari-F8-Tributo-mieten_0e57471ae8.png");
+  }
+
+  .Fer2{
+
+    animation-name:Ferrari2;
+    animation-duration:10s ;
+    animation-iteration-count: 3;
+    animation-timing-function:ease-in-out;
+  
+  }
+  
+  @keyframes Ferrari2 {
+  
+    0%{background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10249/pictures/11059969/01.jpg");
+      width: 500px;
+          height: 270px;
+          background-size: cover; }
+    50%{background-image: url("https://static.oneclickdrive.com/uploads/mobcars/Ferrari_Roma_2023_24302_24302_17005872539-9_small.jpg");
+    }
+    100%{background-image: url("https://static.oneclickdrive.com/uploads/mobcars/Ferrari_Roma_2023_24302_24302_17006453844-15_small.jpg");
+    }
+    
+  }
+
+.Fer2{
+background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10249/pictures/11059969/01.jpg");
+width: 500px;
+    height: 270px;
+    background-size: cover;
+  }
+.Fer2:hover{
+background-image: url("https://static.oneclickdrive.com/uploads/mobcars/Ferrari_Roma_2023_24302_24302_17005872539-9_small.jpg");
+}
+.Fer2:active{
+background-image: url("https://static.oneclickdrive.com/uploads/mobcars/Ferrari_Roma_2023_24302_24302_17006453844-15_small.jpg");
+}
+
+.Fer3{
+
+  animation-name:Ferrari3;
+  animation-duration:10s ;
+  animation-iteration-count: 3;
+  animation-timing-function:ease-in-out;
+
+}
+
+@keyframes Ferrari3 {
+
+  0%{ background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10398/pictures/11062516/2023_Ferrari_Purosangue_Exterior_01.png");
+    width: 470px;
+    height: 270px;
+        background-size: cover;}
+  50%{background-image: url("https://imgd.aeplcdn.com/664x374/n/cw/ec/47137/purosangue-suv-exterior-right-side-view-9.jpeg?isig=0&q=80");
+  }
+  100%{background-image: url("https://m.media-amazon.com/images/I/61dcFtggl-L._AC_UF1000,1000_QL80_.jpg");
+    width: 435px;
+    height: 270px;
+    background-size: cover;}
+  
+}
+
+.Fer3{
+background-image: url("https://ymimg1.b8cdn.com/uploads/car_model/10398/pictures/11062516/2023_Ferrari_Purosangue_Exterior_01.png");
+width: 470px;
+height: 270px;
+    background-size: cover;
+  }
+.Fer3:hover{
+background-image: url("https://imgd.aeplcdn.com/664x374/n/cw/ec/47137/purosangue-suv-exterior-right-side-view-9.jpeg?isig=0&q=80");
+}
+.Fer3:active{
+background-image: url("https://m.media-amazon.com/images/I/61dcFtggl-L._AC_UF1000,1000_QL80_.jpg");
+width: 435px;
+height: 270px;
+background-size: cover;
+  }
+
+/*End Ferrari Sections*/
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  body{font-size: 2vw;}
+  /*HOME*/
+
+  img.logo {
+    width: 15vw;
+
+}
+
+h1 {
+  text-align: center;
+  margin: 25vw 0vw;
+  font-size: 8vw;
+  color: #b7b7b7;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+  .logobmw .logo, 
+  .logomar .logo, 
+  .logofer .logo {
+    width: 5vw;
+    margin: -5vw 4vw;
+}
+
+  .logobmw .links .icon,
+  .logomar .links .icon,
+  .logofer .links .icon {
+    margin: 1vw 90vw;
+  }
+
+  .links ul {
+    margin: 0vw 5vw;
+
+}
+
+.text {
+  flex-direction: column;
+  margin: 1vw 1vw;
+  width: 95%;
+  padding: 1vw;
+}
+
+  .bmw1,
+  .bmw2,  
+  .bmw3{
+    margin: 5vw 20vw;
+}
+
+  .mercedes2 {
+    margin: 0;
+  }
+
+  .special-heading {
+    font-size: 5vw;
+  }
+
+  .logobmw .intro-text h1 {
+    font-size: 5vw;
+  }
+
+  .logobmw .intro-text p {
+    font-size: 3vw;
+  }
+
+  .mar-text {
+    top: 60%;
+    width: 88vw;
+}
+
+.mercedes1,
+.mercedes2,  
+.mercedes3{
+  margin: 5vw 20vw;
+}
+
+.mercedes2:hover {
+  margin: 10vw 20vw;
+}
+
+.fer-text {
+  top: 45%;
+  width: 80vw;
+}
+
+}
+ 
+@media screen and (max-width: 480px) {
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 3vw;
+}
+
+img.logo {
+  width: 20vw;
+  margin: 2vw 0vw;
+  padding: 10vw 0vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  text-align: center;
+  margin: 10vw 0vw;
+  color: #b7b7b7;
+  font-size: 8vw;
+}
+
+  .logobmw .logo,
+  .logomar .logo,
+  .logofer .logo {
+    width: 6vw;
+    margin: -14vw 3vw;
+
+  }
+
+  .logobmw .links .icon,
+  .logomar .links .icon,
+  .logofer .links .icon {
+    margin: 0vw 90vw;
+    width: 4%;
+  }
+
+  .bmw1,
+  .bmw2,
+  .bmw3{
+    margin: 0vw 24vw;
+  }
+  .text {
+    flex-direction: column;
+    margin: 1vw;
+    width: 95%;
+}
+
+ .mercedes1,
+.mercedes2,
+.mercedes3 {
+    margin: 0vw 25vw;  
+  }
+
+  .mar-text {
+    top: 63%;
+    width: 86vw;
+}
+
+  .special-heading {
+    font-size: 4vw;
+  }
+
+  .logobmw .intro-text h1 {
+    font-size: 4vw;
+  }
+
+  .logobmw .intro-text p {
+    font-size: 2.5vw;
+  }
+  .links ul {
+    margin: 0vw 4vw;
+
+  }
+  .logofer .links ul {
+    margin: 0vw 2vw;
+
+}
+
+.fer-text {
+  top: 47%;
+  width: 75vw;
+}
+
+}
